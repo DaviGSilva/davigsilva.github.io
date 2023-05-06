@@ -1,12 +1,18 @@
-collections:
-  authors:
-    output: true
+title: davigsilva blog
+author:
+  name: davigsilva
+description:
+  Blog para documentar meu aprendizado com desenvolvimento de software para web.
+theme: minima
+minima:
+  date_format: "%b %-d, %Y"
+  social_links:
+    - { platform: github,   user_url: "https://github.com/davigsilva" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/davigsilva" }
+  show_excerpts: true
+header_pages:
+  - about.md
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -15,4 +21,4 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "base"
